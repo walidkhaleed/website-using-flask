@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+{% block title %}Prodcut{% endblock %}
+{% block header %}
+
+<nav class="navproduct">
+    <ul>
+
+        <li><a href="/" class="active" aria-current="page">Home</a></li>
+        <li><a href="#section2">Product</a></li>
+        <li><a href="#page-3">Reservation</a></li>
+        <li><a href="#page-4">Reviews</a></li>
+
+
+    </ul>
+
+</nav>
+{%endblock%}
+
+{% block body %}
+<section class="headp">
+    <video autoplay muted loop class="videop">
+        <source src={{ url_for('static', filename="video/background2.mp4" ) }} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="scrollp">
+        <a href="#section2" class="scrolla">Scroll Down To Choose Our Product</a><br>
+        <p>By scrolling down you will choose diffrent kid of livestock and you may register it as much as you want.
+        </p><br>
+    </div>
+</section>
+
+
+<section class="product-section reveal" id="section2">
+    <div class="selectp">
+        <h1>see and book our product</h1>
+    </div>
+
+    <div class="livestockname">
+        <label><input type="radio" name="type" id="cattle-select" class="single" data-class="d1">
+            Cattle
+        </label><br>
+        <label>
+            <input type="radio" name="type" id="sheep-select" class="single" data-class="d2">
+            Sheep
+        </label>
+        <label>
+            <input type="radio" name="type" id="goat-select" class="single" data-class="d3">
+            Goat
+        </label>
+        <label>
+            <input type="radio" name="type" id="camel-select" class="single" data-class="d4">
+            Camel
+        </label>
+    </div>
+    <div class="itemsp">
+        <div id="items1" class="animal-items allshowp d1 ">
+            <p>Cattle Section</p>
+            <form>
+                <label><input type="radio" value="anagus" name="type" class="radio" data-class="div1" />
+                    Angus</label><br>
+                <label><input type="radio" value="simmental" name="type" class="radio" data-class="div2" />
+                    Simmental</label><br>
+                <label><input type="radio" value="limousin" name="type" class="radio" data-class="div3" />
+                    Limousin</label><br>
+                <label><input type="radio" value="hereford" name="type" class="radio" data-class="div4" />
+                    Hereford</label><br>
+
+            </form>
+        </div>
+
+        <div id="items2" class="animal-items allshowp  d2" style="display: none;">
+            <p>Sheep Section </p>
+            <form>
+                <label><input type="radio" value="suffolk" name="type" class="radio" data-class="div5" />
+                    suffolk</label><br>
+                <label><input type="radio" name="type" value="cheviot" class="radio" data-class="div6" />
+                    Cheviot</label><br>
+                <label><input type="radio" name="type" value="charollais" class="radio" data-class="div7" />
+                    Charollais</label><br>
+                <label><input type="radio" name="type" value="katahdin" class="radio" data-class="div8" />
+                    Katahdin</label><br>
+            </form>
+        </div>
+        <div id="items3" class="animal-items allshowp d3 " style="display: none;">
+            <p>Goat Section</p>
+            <form>
+                <label><input type="radio" name="type" value="boer" class="radio" data-class="div9" />
+                    Boer</label><br>
+                <label><input type="radio" name="type" value="spanish" class="radio" data-class="div10" />
+                    Spanish</label><br>
+            </form>
+
+        </div>
+        <div id="items4" class="animal-items allshowp d4 " style="display: none;">
+            <p>Camel Section</p>
+            <form>
+                <label><input type="radio" name="type" value="dromedary" class="radio" data-class="div11" />
+                    Dromedary</label><br>
+            </form>
+        </div>
+    </div>
+
+    <div class="div1 allshow">
+        <h1>Angus</h1>
+        <p>
+            Angus can be either red or black and are naturally polled (polled means no horns).It belong from
+            <span class="activeword">Scotland</span>. They are traditionally noted for their moderate size with an
+            average bull weighing 1045.5 kilograms and an average female weighs 568 kilograms.
+        </p>
+        <img class="imgp " src="../static/image/animal/cattle/anguss.png" alt="">
+    </div>
+    <div class="div2 allshow" style="display: none;">
+        <h1>Simmental</h1>
+
+        <p>
+
+            Simmental is large framed with lots of muscle and excellent maternal instincts. They range in colour
+            from light tan to dark red and have white markings. They can be polled or horned. It belong from
+            <span class="activeword">Switzerland</span>. Mature Simmental bulls range from 1091 to 1273 kilograms,
+            while females average around 727 kilograms.
+        </p>
+        <img class="imgp" src="../static/image/animal/cattle/simmental.png" alt="">
+    </div>
+    <div class="div3 allshow" style="display: none;">
+        <h1>Limousin</h1>
+        <p>
+            Limousin have heavy muscling and have awesome lean high yielding body mass (also known as carcass in the
+            cattle world). Limousins traditionally are golden red to brown in colour or black. They are deeper in
+            colour around their neck, this is very noticeable
+            in the bulls. The bulls weigh around 1091 kilograms and the females weigh around 636 to 727 kilograms.
+        </p>
+        <img class="imgp" src="../static/image/animal/cattle/limousinn.png" alt="">
+
+    </div>
+    <div class="div4 allshow" style="display: none;">
+        <h1>Hereford</h1>
+        <p>
+            Hereford imported from the <span class="activeword"> British</span>. They have a consistent colour
+            pattern of red with a white face, brisket (skin that hangs underneath the neck) and underside. There are
+            both polled and horned Herefords.
+            Bulls will weight 1000-1046 kilograms and females weight 591 to 682 kilograms.
+        </p>
+        <img class="imgp" src="../static/image/animal/cattle/hereford.png" alt="">
+
+    </div>
+    <div class="div5 allshow" style="display: none;">
+        <h1>Suffolk</h1>
+
+        <p>
+            Suffolks are a common breed of domestic sheep. They are polled, and have black open faces along with
+            black legs and white-woolled bodies. Their large frame and muscular bodies make them an ideal breed for
+            meat production.Male will weight 125 kilograms
+            and females weight 88 kilograms.
+        </p>
+        <img class="imgp" src="../static/image/animal/sheep/suffolk.png" alt="">
+    </div>
+    <div class="div6 allshow" style="display: none;">
+        <h1>Cheviot</h1>
+        <p>
+            Cheviot is a breed of white-faced sheep which gets its name from a range of hills in<span
+                class="activeword"> north
+                Northumberland</span>. The Cheviot is a dual-purpose breed, being raised primarily for its wool and
+            meat. Weight between 72-90 kg.
+        </p>
+        <img class="imgp" src="../static/image/animal/sheep/Cheviot.png" alt="">
+    </div>
+    <div class="div7 allshow" style="display: none;">
+        <h1>Charollais</h1>
+        <p>
+            Charollais is a breed of domestic sheep originating in east central<span class="activeword">
+                France</span>. Weight from 90kg to 135kg. The head is pinkish-brown and is usually free of wool but
+            may have a fine covering of pale coloured
+            hair and both sexes are polled (without horns).
+        </p>
+        <img class="imgp" src="../static/image/animal/sheep/charollais.png" alt="">
+    </div>
+    <div class="div8 allshow" style="display: none;">
+        <h1>katahdin</h1>
+        <p>
+            Katahdin is a breed of domestic sheep developed by breeder Michael Piel in Maine,<span class="activeword">
+                United States</span>. The average Katahdin ewe weight is 120 to 80kg and ram's
+            weight is 90kg-125kg.The Katahdin sheds its winter
+            coat, and so does not have to be sheared. The Katahdin's hair can come in any color, as the emphasis of
+            the breed is on production rather than appearance.
+        </p>
+        <img class="imgp" src="../static/image/animal/sheep/Katahdin.png" alt="">
+    </div>
+    <div class="div9 allshow" style="display: none;">
+        <h1>Boer</h1>
+        <p>
+            Boer goat from<span class="activeword"> South African</span>, they were selected for meat rather than
+            milk production. Have white bodies and distinctive brown heads. Some Boer goats can be completely brown
+            or white or paint. weigh
+            36 kg at 90 days.
+        </p>
+        <img class="imgp" src="../static/image/animal/goat/Boer.png" alt="">
+    </div>
+    <div class="div10 allshow" style="display: none;">
+        <h1>Spanish</h1>
+        <p>
+            Spanish goat from<span class="activeword"> Spain</span>. Has a wide color variation, and they can be
+            found in any color that is found in goats. Body weight of the adult goat vary from 23 to 90 kg. They
+            have large ears and their ears
+            are held horizontally and forward next to the head. Used mainly for meat production
+
+        </p>
+        <img class="imgp" src="../static/image/animal/goat/spanish.png" alt="">
+    </div>
+    <div class="div11 allshow" style="display: none;">
+        <h1>Dromedary</h1>
+        <p>
+            The dromedary located mostly in<span class="activeword"> Saudi Arabia</span>. Males typically weight
+            between 400 and 600 kg, females between 300 and 540 kg. The coat is generally brown but can range from
+            black to nearly white. Use
+            for meat mostly and milk production. </p><br>
+        <img class="imgp" src="../static/image/animal/dromedary.png" alt="">
+    </div>
+
+
+</section>
+<section class="book reveal" id="page-3">
+    <div class="container contactcon">
+        <form id="contact" action="{{ url_for('reservation') }}" method="Post">
+            <h4>Book from us and will call you soon</h4>
+            <fieldset>
+                <input placeholder="Your name" type="text" name="name" id="name" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number (optional)" type="tel" name="phone" id="phone">
+            </fieldset>
+            <fieldset>
+                <select id="selectCountry" name="country" required>
+                    <option value="">Choose Country</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <input type="radio" class="checkterm" id="checklabel" name="check" value="press" data-class="c1" required
+                    style=" width: 10%;" />
+                <label style="width: 80%;  " for="checklabel">I agree for sharing my data.</label>
+            </fieldset>
+            <div class="c1 showcheck" style="display: none;">
+                <fieldset>
+                    <select name="product" required style="width: 60%;" id="product">
+                        <optgroup label="Cattle">
+                            <option value="Angus">Angus</option>
+                            <option value="Simmental">Simmental</option>
+                            <option value="Limousin">Limousin</option>
+                            <option value="Hereford">Hereford</option>
+                        </optgroup>
+                        <optgroup label="Sheep">
+                            <option value="suffolk">suffolk</option>
+                            <option value="Cheviot">Cheviot</option>
+                            <option value="Charollais">Charollais</option>
+                            <option value="Katahdin">Katahdin</option>
+                        </optgroup>
+                        <optgroup label="goat">
+                            <option value="Boer">Boer</option>
+                            <option value="Spanish">Spanish</option>
+                        </optgroup>
+                        <optgroup label="Camel">
+                            <option value="Dromedary">Dromedary</option>
+                        </optgroup>
+                    </select>
+                    <input type="number" placeholder="amount " style="width: 30%;" id="numberp" name="numberp">
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="For a specific details...." id="message" name="message"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+    <div class="cont">
+        <div class="conr ">
+            <h2>Review</h2><br><br>
+            <p>post your review so we can see it </p>
+            <form action="{{ url_for('posts') }}" method="POST">
+                <label>
+                    <span>Name</span>
+                    <input class="input" type="text" name="rev_name" id="rev_name" placeholder="Your name" required>
+                </label><br>
+                <label>
+                    <span>Review Us</span>
+                    <input class="input" type="text" name="rev_msg" id="rev_msg" placeholder="Your Review" required>
+                </label><br>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Finish</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="review reveal" id="page-4">
+    <h1 style="text-align: center; padding: 30px;">Our Client Review</h1>
+    <div class="block-list">
+        {% for post in posts %}
+        <div class="block-list__item">
+
+            <h2>{{post.rev_name}}</h2><br>
+            <p>{{post.rev_msg}}</p><br>
+            <h6>{{post.date_added}}</h6>
+
+        </div>
+        {% endfor%}
+    </div>
+
+
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+{%endblock%}

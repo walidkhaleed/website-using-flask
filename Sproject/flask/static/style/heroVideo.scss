@@ -1,0 +1,60 @@
+.heading {
+    width: 100%;
+    height: 87.2vh;
+    border: transparent 1px solid;
+	cursor: none;
+
+}
+body {
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+.myVideo {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.scrollp {
+    margin-top: 100px;
+    width: 100;
+    text-align: center;
+    a {
+        text-decoration: none;
+        font-size: 24pt;
+        color: white;
+        &:hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    p {
+        color: white;
+        margin: 20px;
+        font-size: 16pt;
+    }
+}
+#scrolla {
+    font-size: 12pt;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transition: all 2s;
+    padding: 15px;
+    border-radius: 15px;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+    &:hover {
+        opacity: 0.4;
+        color: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        text-decoration: none;
+        border: none;
+    }
+}

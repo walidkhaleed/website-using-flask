@@ -1,0 +1,124 @@
+<!--master html file-->
+<!DOCTYPE html>
+<html>
+<!--
+        master css link
+        bootstrap online link
+        font online link
+        meta
+    -->
+
+<head>
+    <title>{% block title %}{% endblock %} - ASFS</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/base.css')}}">
+    <meta name="keywords"
+        content="alsalam livestock alsalamforlivestock khaled lebanon farm animal farm lebanonfarm cattle  alsalamcattle">
+    <meta name="description" content="Alsalam company for trading dealing livestock">
+    <meta name="author" content="walid kassem khaled">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!--body -->
+
+<body>
+    <!--navbar element and brand name-->
+    <header>
+        <div class="brand">
+            <a href="\" class="hyperlink">
+                <h3>AlSalam <span style="font-family: 'Dancing Script', cursive; color: white;"> For Livestock</span>
+                </h3>
+            </a>
+        </div>
+        <!--jinji2 navbar elements-->
+        {% block header %}
+        {% endblock %}
+    </header>
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <!--mouse effect moving in webpages-->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!--jinji2 body elements-->
+    {% block body %}
+    {% endblock %}
+
+    <!--admin popup page login-->
+    <div id="login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button data-dismiss="modal" class="close">&times;</button>
+                    <h3>Login Only For Admin</h3>
+                    <form action="{{ url_for('login') }}" method="POST">
+                        <input type="text" name="username" id="username" class="username form-control"
+                            placeholder="Username" required />
+                        <input type="password" name="password" id="password" class="password form-control"
+                            placeholder="password" required />
+                        {% if failed %}
+                        <center>
+                            <small style="color: red">Incorrect Username or Password</small>
+                        </center>
+                        {% endif %}
+                        <input class="btn login" type="submit" value="Login" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <!--wave view footer-->
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <!--min-x min-y width ,hight-->
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(186, 215, 219, 1)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+        <!--social media company-->
+        <div class="content">
+            <p>AlSalam For Livestock CO &nbsp;</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a><br>
+            <p>walid alahamd khaled &nbsp;</p>
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            <sup>&copy;</sup>
+            <a href="../static/other/walid-alahamdkhaled-resume.pdf" download>| My resume </a>
+            <a class="login-trigger" data-target="#login" data-toggle="modal" style="cursor: default;">|Admin</a>
+            <!--admin login link-->
+        </div>
+    </footer>
+
+    <!--script files js-->
+    <script src="../static/javascript/button-top.js"></script>
+    <script src="../static/javascript/mouse-cursor.js"></script>
+    <script src="../static/javascript/product-book.js"></script>
+    <script src="../static/javascript/product-show.js"></script>
+    <script src="../static/javascript/quotes-slide.js"></script>
+    <script src="../static/javascript/show-section.js"></script>
+    <script src="../static/javascript/slider-show.js"></script>
+    <script src="../static/javascript/3d_card.js"></script>
+
+    <!--js links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</html>
+</body>

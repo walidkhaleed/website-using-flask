@@ -1,0 +1,51 @@
+#button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #2c2c2c;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  opacity: 1;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+#button:active {
+  border: 1px solid black;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+/*# sourceMappingURL=button.css.map */

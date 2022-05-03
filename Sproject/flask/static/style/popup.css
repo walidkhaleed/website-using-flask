@@ -1,0 +1,87 @@
+/*Trigger Button*/
+/*Modal*/
+.login-trigger {
+  text-decoration: none;
+}
+
+.close {
+  color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.modal-body {
+  cursor: default;
+}
+
+.modal-content {
+  cursor: default;
+  cursor: default;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #bad7db), to(white));
+  background: linear-gradient(90deg, white 0%, #bad7db 50%, white 100%);
+}
+
+.form-control {
+  cursor: default;
+  margin: 1em 0;
+}
+
+.form-control:hover {
+  cursor: default;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #fff;
+}
+
+.form-control:focus {
+  cursor: default;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #fff;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #eee;
+}
+
+.username {
+  border: none;
+  cursor: default;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;
+}
+
+.password {
+  border: none;
+  cursor: default;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;
+}
+
+.login {
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: black;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  margin-top: 1em;
+}
+/*# sourceMappingURL=popup.css.map */

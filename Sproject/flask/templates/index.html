@@ -1,0 +1,308 @@
+<!--coonect to master html page-->
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block header %}
+
+<!--nav bar for index-->
+<nav class="navindex">
+    <ul>
+
+        <li><a href="#page-2" class="active" aria-current="page">Product</a></li>
+        <li><a href="#page-3">Images</a></li>
+        <li><a href="#page-4">Contact</a></li>
+        <li><a href="#page-5">Team</a></li>
+        <li><a href="#page-6">History</a></li>
+
+    </ul>
+
+</nav>
+{%endblock%}
+<div class="cursor"></div>
+<div class="cursor2"></div>
+{% block body %}
+
+
+
+<!--heropage-->
+<section class="heading" id="page-1">
+    <video autoplay muted loop class="myVideo">
+        <source src={{ url_for('static', filename="video/backgroundhome.mp4" ) }} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!--contact in heropage-->
+    <div class="scrollp">
+        <a class="scrolla">Shipping Over The World</a><br>
+        <p>All What you need, You will choose high quality, low price and less time with our livestock product such as
+            cattles, camels ,goats and sheeps. We have 2 branches located in lebanon,germany.You can
+            make any reservation in our product, and we will contact with you as sson as possible We are
+            pleasure to help you...
+        </p><br>
+        <a href="/product#page-3" id="scrolla">Reservation</a>
+    </div>
+</section>
+<!--features images and contact action to product page -->
+<section class="features" id="page-2">
+    <div class="ourproduct">
+        <h1>Our Product</h1>
+        <p>Choose from our store with best price, quality and less shipping time</p>
+    </div>
+    <div style=" align-items: center; text-align: center;">
+        <div class="card card0  reveal">
+            <div class="border ">
+                <h2>CATTLE</h2>
+                <p>
+                    Cattle make up the largest livestock group worldwide. Among those prominent in beef production are
+                    Hereford, Shorthorn, and Angus.
+                </p>
+                <a href="/product#section2" class="btncard">View More</a>
+
+            </div>
+        </div>
+        <div class="card card1 reveal ">
+            <div class="border">
+                <h2>SHEEP</h2>
+                <p>
+                    Sheep were among the first animals to be domesticated. Sheep are raised primarily for the fleece or
+                    wool of their coats, for meat, and milk.
+                </p>
+                <a href="/product" class="btncard">View More</a>
+            </div>
+        </div>
+        <div class="card card2 reveal">
+            <div class="border">
+                <h2>GOAT</h2>
+                <p>
+                    Goats are raised for their milk and its by-products and for meat, hides, and wool. Goats eat pasture
+                    grass, and feeds from grain.
+                </p>
+                <a href="/product" class="btncard">View More</a>
+            </div>
+        </div>
+        <div class="card card3 reveal">
+            <div class="border">
+                <h2>CAMEL</h2>
+                <p>
+                    A camel is an even-toed ungulate in the genus Camelus that bears distinctive fatty deposits known as
+                    "humps" on its back as livestock, they provide food (milk and meat).
+                </p>
+                <a href="/product" class="btncard">View More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--modern images automatic slide show-->
+<section class="slideshowc reveal " id="page-3">
+    <div class="slideshow-container ">
+        <div class="slider fade">
+            <div class="numbertext">1 / 5</div>
+            <img class="sliderimg" src="../static/image/slideshow/girlcow1.jpg" style="width:100%">
+            <div class="text">Live can be easy →</div>
+        </div>
+
+        <div class="slider fade">
+            <div class="numbertext">2 / 5</div>
+            <img class="sliderimg" src="../static/image/slideshow/girlcow2.jpg" style="width:100%">
+            <div class="text">If you can work smart →</div>
+        </div>
+
+        <div class="slider fade">
+            <div class="numbertext">3 / 5</div>
+            <img class="sliderimg" src="../static/image/slideshow/girlcow3.jpg" style="width:100%">
+            <div class="text">With a trust partner →</div>
+        </div>
+        <div class="slider fade">
+            <div class="numbertext">4 / 5</div>
+            <img class="sliderimg" src="../static/image/slideshow/girlcow4.jpg" style="width:100%">
+            <div class="text">Go a head and book →</div>
+        </div>
+        <div class="slider fade">
+            <div class="numbertext">5 / 5</div>
+            <img class="sliderimg" src="../static/image/slideshow/girlcow5.jpg" style="width:100%">
+            <div class="text">With our team ☺☻</div>
+        </div>
+    </div>
+
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+<!--contact form  with livemap google-->
+<section class="contactus" id="page-4">
+
+    <h1>contact us and check our location</h1>
+
+    <iframe style="cursor:pointer"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9376.375538111304!2d35.49775044341188!3d33.81103918566566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7483f0adf9927875!2sAl%20Salam%20for%20livestock!5e0!3m2!1sen!2slb!4v1628590393542!5m2!1sen!2slb"
+        frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <div class="reveal contactemail">
+        <!--jinji message success-->
+        {% if success %}
+        <div class="alert alert-success" role="alert">
+            Your message has been sent successfully!
+        </div>
+        {% endif %}
+
+
+        <form action="{{ url_for('send_message') }}" class="formcontact" name="sentMessage" method="POST">
+            <div class="infoform">
+                <h2>CONTACT US</h2>
+
+                <p type="Name:"><input type="text" name="name" id="name" placeholder="Your Name.." required
+                        data-validation-required-message="Please enter your name."></p>
+                <p type="Email:"><input type="email" name="email" id="email" placeholder="Your Email.." required
+                        data-validation-required-message="Please enter your email."></input>
+                </p>
+                <p type="Message:"><input type="text" name="message" id="message" placeholder="Tell Us.." required
+                        data-validation-required-message="Please enter your message."></input>
+                </p>
+                <input type="submit" value="Send" id="btncontact">
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--team view -->
+<section class="ourteamslide" id="page-5">
+    <div class="row" style="margin-top: 100px; padding: 0;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  reveal" style="margin: 0;padding: 0;">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="../static/image/team/teamimg3.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Mike smith</h3>
+                    <h4 class="title">General manager</h4>
+                    <h4 class="title">+961256465</h4>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  reveal">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="../static/image/team/khaledimag.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Khaled M</h3>
+                    <h4 class="title">Sales</h4>
+                    <h4 class="title">+49562251131</h4>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  reveal">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="../static/image/team/teamimg2.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Mary Ramos</h3>
+                    <h4 class="title">Financial administrator</h4>
+                    <h4 class="title">+4965165661</h4>
+
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3  reveal">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="../static/image/team/teamimg4.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">David Huntley</h3>
+                    <h4 class="title">Selection</h4>
+                    <h4 class="title">+495661611</h4>
+
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--review user rate and visit view-->
+<section class="quotesection reveal" id="page-6" id="#about">
+
+    <div class="sidefarm reveal">
+        <h1>About Us</h1>
+        <p>The Khaled family is in it's 4<sup>th</sup> generation of family livestock and shipping business, with over
+            80 years of
+            livestock business heritage located in Beirut-Lebanon. ALSALAM FOR LIVESTOCK - makes our team of talented
+            individuals and growing partners strive to raise our import and export
+            livestock, and utilize modern and advanced livestock collection and transportation practices to be efficient
+            and sustainable </p>
+        <img src="../static/image/otherimg/girlwithcow.jpg" alt="girlwithcow">
+    </div>
+
+    <div class="panel-quote ">
+        <h1>What They Said To Us</h1>
+        <div class="quote-progress"></div>
+        <div>
+            <blockquote>
+                <p class="quote"></p>
+                <p class="author">- <span class="author-name"></span></p>
+                <div class="quote-nav">
+                    <button class="previous quotebtn">←
+                    </button>
+                    <button class="random quotebtn">
+                        ↔
+                    </button>
+                    <button class="next quotebtn">→
+                    </button>
+                    <a class="remore" href="/product#page-4">View More</a>
+                </div>
+            </blockquote>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+{%endblock%}

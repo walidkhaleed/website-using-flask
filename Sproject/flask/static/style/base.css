@@ -1,0 +1,21 @@
+@import "header.css";
+@import "features.css";
+@import "heroVideo.css";
+@import "quote.css";
+@import "footer.css";
+@import "ourTeam.css";
+@import "contact.css";
+@import "carousel.css";
+@import 'popup.css';
+@import "button.css";
+@import "product.css";
+@import "book.css";
+@import "review.css";
+@import "main.css";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Charm:wght@400;700&family=Cookie&family=Montserrat:ital,wght@0,100;1,100&family=Satisfy&display=swap";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+

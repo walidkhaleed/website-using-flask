@@ -1,0 +1,30 @@
+<!--coonect to master html page-->
+{% extends "base.html" %}
+{% block header %}
+<!--nav bar for index-->
+<nav class="navindex">
+    <ul>
+        <li><a href="/admin" class="active" aria-current="page">Database</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+
+</nav>
+{%endblock%}
+{%block body%}
+<section class="heading" id="page-1">
+    <video autoplay muted loop class="myVideo">
+        <source src={{ url_for('static', filename="video/background3.mp4" ) }} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!--contact in heropage-->
+    <div class="scrollp">
+        <a class="scrolla">Welcome Back Admin</a><br>
+        <p>
+            Hope you feel good today, there are orders and messages waiting for you please check over and let
+            enjoy your day
+        </p><br>
+        <a href="/admin" id="scrolla">Database</a>
+        <a href="/logout" id="scrolla">Logout</a>
+    </div>
+</section>
+{%endblock%}

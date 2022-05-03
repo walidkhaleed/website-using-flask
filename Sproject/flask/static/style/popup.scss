@@ -1,0 +1,74 @@
+/*Trigger Button*/
+/*Modal*/
+.login-trigger {
+	text-decoration: none;
+}
+.close {
+	color: #fff;
+	transform: scale(1.2);
+}
+.modal-body {
+	cursor: default;
+}
+.modal-content {
+	cursor: default;
+	cursor: default;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(186, 215, 219, 1) 50%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+.form-control {
+	cursor: default;
+	margin: 1em 0;
+	&:hover {
+		cursor: default;
+		box-shadow: none;
+		border-color: #fff;
+	}
+	&:focus {
+		cursor: default;
+		box-shadow: none;
+		border-color: #fff;
+		&::-webkit-input-placeholder {
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+	&::-webkit-input-placeholder {
+		color: #eee;
+	}
+}
+.username {
+	border: none;
+	cursor: default;
+	border-radius: 0;
+	box-shadow: none;
+	border-bottom: 2px solid #eee;
+	padding-left: 0;
+	font-weight: normal;
+	background: transparent;
+}
+.password {
+	border: none;
+	cursor: default;
+	border-radius: 0;
+	box-shadow: none;
+	border-bottom: 2px solid #eee;
+	padding-left: 0;
+	font-weight: normal;
+	background: transparent;
+}
+.login {
+	padding: 6px 20px;
+	border-radius: 10px;
+	background: black;
+	color: #ffffff;
+	font-weight: bold;
+	transition: all 2s;
+	margin-top: 1em;
+
+}

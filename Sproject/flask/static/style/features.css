@@ -1,0 +1,203 @@
+.features {
+  display: inline-table;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+.ourproduct {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.ourproduct h1 {
+  padding: 15px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.ourproduct p {
+  text-align: center;
+}
+
+.card {
+  display: inline-table;
+  margin: 0 30px 50px 0;
+  height: 400px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  -webkit-transition: background 3s;
+  transition: background 3s;
+  background: #000;
+  -webkit-box-shadow: 0 70px 63px -60px #000;
+          box-shadow: 0 70px 63px -60px #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card0 {
+  background: url("../image/animal2/cattle-bw.jpg") center center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover {
+  background: url("../image/animal2/cattle-bw.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2 {
+  opacity: 1;
+}
+
+.card0:hover p {
+  opacity: 1;
+}
+
+.card0:hover .fa {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("../image/animal2/sheep-bw.jpg") center center no-repeat;
+  background-size: 620px;
+}
+
+.card1:hover {
+  background: url("../image/animal2/sheep-bw.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2 {
+  opacity: 1;
+}
+
+.card1:hover p {
+  opacity: 1;
+}
+
+.card1:hover .fa {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../image/animal2/goat-bw.jpg") center center no-repeat;
+  background-size: 620px;
+}
+
+.card2:hover {
+  background: url("../image/animal2/goat-bw.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2 {
+  opacity: 1;
+}
+
+.card2:hover p {
+  opacity: 1;
+}
+
+.card2:hover .fa {
+  opacity: 1;
+}
+
+.card3 {
+  background: url("../image/animal2/camel-bw.jpg") center center no-repeat;
+  background-size: 620px;
+}
+
+.card3:hover {
+  background: url("../image/animal2/camel-bw.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card3:hover h2 {
+  opacity: 1;
+}
+
+.card3:hover p {
+  opacity: 1;
+}
+
+.card3:hover .fa {
+  opacity: 1;
+}
+
+.border {
+  margin: 2px;
+  height: 390px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  -webkit-transition: border 1s;
+  transition: border 1s;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.border:hover {
+  border: 2px solid #ffffff;
+}
+
+.border h2 {
+  padding: 15px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  opacity: 0.3;
+  color: white;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.border p {
+  color: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  text-align: justify;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25%;
+}
+
+.btncard {
+  border: none;
+  border-radius: 5px;
+  background: #000000;
+  color: #ffffff;
+  float: left;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  text-transform: capitalize;
+  opacity: 0.4;
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  padding: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btncard:hover {
+  background: white;
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+}
+/*# sourceMappingURL=features.css.map */

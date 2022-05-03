@@ -1,0 +1,187 @@
+.navproduct {
+  margin-right: 2%;
+  color: black;
+}
+
+.navproduct ul li a {
+  color: #bad7db;
+  font-weight: bolder;
+}
+
+.headp {
+  height: 87.5vh;
+  width: 100%;
+  border: transparent solid 1px;
+}
+
+.videop {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.product-section {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14pt;
+}
+
+.selectp h1 {
+  padding: 25px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.allshow {
+  text-align: center;
+  float: right;
+  margin-top: -450px;
+  width: 40%;
+  height: 80%;
+  margin-right: 10%;
+}
+
+.allshow h1 {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.allshow p {
+  text-align: justify;
+  float: right;
+}
+
+.allshow img {
+  width: auto;
+  height: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.livestockname {
+  margin-left: 50px;
+  width: 10%;
+}
+
+.livestockname label {
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+  border-bottom: 1px solid #8b8b8b;
+  border-radius: 50px;
+  font-size: 18pt;
+  padding: 10px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  color: black;
+  opacity: 1;
+}
+
+.livestockname label:hover {
+  background-color: black;
+  text-decoration: none;
+  border-radius: 5% 10% 10% 5% / 10% 55% 55% 10%;
+  opacity: 0.9;
+  color: white;
+}
+
+.livestockname label input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.itemsp {
+  float: left;
+  margin-top: -400px;
+  margin-left: 20%;
+  width: 10%;
+  height: 420px;
+}
+
+.itemsp label {
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.itemsp input {
+  width: 0px;
+}
+
+.animal-items {
+  margin: 0;
+  padding: 0;
+  height: 420px;
+  text-align: center;
+}
+
+.animal-items p {
+  font-size: 18pt;
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+  font-family: 'Dancing Script', cursive;
+}
+
+.activeword {
+  color: #9add9a;
+}
+
+@media (max-width: 1000px) {
+  .livestockname {
+    width: 35%;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .itemsp {
+    float: right;
+    margin-top: -400px;
+    width: 35%;
+    margin-right: 5%;
+    height: 420px;
+  }
+  .allshow {
+    float: none;
+    text-align: center;
+    margin-top: 0;
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+  }
+  .allshow img {
+    width: 70%;
+  }
+  .product-section {
+    width: 100%;
+    height: 180vh;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14pt;
+  }
+  .navproduct {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .navproduct ul li a {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=product.css.map */
